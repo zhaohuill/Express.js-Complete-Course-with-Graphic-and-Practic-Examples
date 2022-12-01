@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Template</title>
+</head>
+<body>
+    <h1>PART 11 - EJS</h1>
+
+    <!--+-Con La Sintaxis de Aquí Abajo Mostramos Cómo Usando EJS podemos Pintar en Pantalla los Datos que nos son dados desde nuestro Archivo "index.js", para Entender la Sintaxis EJS de abajo y Aprender EJS 
+        con más Detalle ir a https://ejs.co/#docs y https://riptutorial.com/es/node-js/example/6012/usando-un-motor-de-plantillas . 
+        +-Un motor de plantillas como EJS le permite usar archivos de plantillas estáticas en su aplicación. El motor de plantillas reemplaza en Tiempo Real las variables en un archivo de plantilla con valores
+        reales, y transforma la plantilla en un archivo HTML enviado al cliente. Este enfoque hace más Fácil diseñar una página HTML.-->
+    <ul>
+        <% people.forEach(function (person) { %>
+            <li><%= person.name %></li>
+        <% }); %>
+    </ul>
+
+
+</body>
+</html>
